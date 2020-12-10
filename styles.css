@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  font-size: 16px;
+  --text-primary: #b6b6b6;
+  --test-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-sencondary: #141418;
+}
+head {
+  margin: 0;
+}
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+body::-webkit-scrollbar-track {
+  background: #404040;
+}
+body::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+}
+main {
+  margin-left: 5rem;
+}
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: 200ms ease;
+}
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  columns: var(--text-primary);
+  text-decoration: none;
+}
+.link-text {
+  color: white;
+  display: none;
+  margin-left: 1rem;
+}
+.nav-link svg {
+  color: white;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  align-items: left;
+}
+.nav-link svg:hover {
+  color: lightblue;
+}
+.nav-link svg:hover {
+  transition: 800ms ease;
+}
+@media only screen and (orientation: landscape) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    color: white;
+    display: block;
+  }
+}
+@media only screen and (orientation: portrait) {
+  .nav-link svg {
+    color: white;
+    min-width: 1rem;
+    margin: 0 1.5rem;
+    align-items: left;
+  }
+
+  .link-text {
+    color: white;
+    display: none;
+    margin-left: 1rem;
+  }
+
+  .navbar {
+    top: 0;
+    width: 100vh;
+    height: 5rem;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar:hover .link-text {
+    display: none;
+  }
+
+  main {
+    margin-left: 1rem;
+    margin-top: 5rem;
+  }
+}
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*# sourceMappingURL=styles.css.map*/
